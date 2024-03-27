@@ -1,0 +1,16 @@
+{% extends 'basetemplate.html' %}
+
+{% block title %}
+    {{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="row" xmlns="http://www.w3.org/1999/html">
+        <img src="/static/image/accessories.png" class="col-12 col-md-6 img-fluid rounded-circle" alt="Main foto">
+        <p>Аксессуары это очень важная деталь в стиле человека.<br>
+            Ведь именно с помощью аксессуаров можно подчеркнуть индивидуальность человека.<br>
+            Порой самую унылую и скучную одежду могут оживить правильно подобранные аксессуары.<br>
+            Выбирая аксессуары, важно уделять внимание их форме, материалу, из которого они сделаны, их цвету.<br>
+            Конечно же у аксессуаров есть своя мода.</p>
+    </div>
+{% endblock %}

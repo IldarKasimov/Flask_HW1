@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <title>{{ title }}</title>
+</head>
+<body>
+<div class="row">
+    <h1 class="col-12 text-monospace text-center">List News</h1>
+    {% for new in list_news %}
+    <div class="col-12 col-md-6 col-lg-4">
+        <h2>{{ new.title_new }}</h2>
+        <p>{{ new.description }}</p>
+        <p>{{ new.date }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+</body>
+</html>
